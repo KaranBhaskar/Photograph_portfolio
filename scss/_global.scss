@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-stack;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+h2,h3,h4{
+    text-transform: uppercase;
+}

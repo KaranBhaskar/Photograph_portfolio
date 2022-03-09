@@ -3,11 +3,16 @@
   height: 100%;
   padding: 0 2rem;
   margin: auto;
+  overflow: hidden;
 }
 
 %btn-shared {
   display: inline-block;
-  padding: 1rem;
+  padding: 0.75rem 1.25rem;
   cursor: pointer;
   border: none;
+  color: $dark-color;
+  background-color: $light-color;
+  margin-top: 1rem;
+  transition: all 0.5s linear;
 }
