@@ -53,3 +53,114 @@
     }
   }
 }
+
+.index,
+.creative {
+  padding-top: 1.5rem;
+  &__title {
+    text-align: center;
+    font-size: $m-heading;
+  }
+  &__line {
+    width: 5rem;
+    height: 0.3125rem;
+    background-color: $main-color;
+    margin: 0.5rem auto;
+    border-radius: 0.3125rem;
+  }
+  &__para {
+    text-align: center;
+    font-size: $lead;
+  }
+}
+
+.specials {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 0.5rem;
+  }
+  &__icon {
+    color: $main-color;
+    margin: 0.5rem 0;
+  }
+  &__icon--dark-circle {
+    background-color: $dark-color;
+    border-radius: 50%;
+    padding: 1.5rem;
+    color: $light-color;
+    transition: all 1s;
+    width: 8.25rem;
+    height: 8.25rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    position: relative;
+    &:hover {
+      background-color: $main-color;
+      transform: scale(1.3);
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.awards {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0.5rem;
+    height: 15rem;
+    width: 100%;
+  }
+  &__title {
+    font-size: $s-heading;
+    padding: 1rem 0;
+  }
+  &__para {
+    font-size: $m-heading;
+  }
+  &__div--light {
+    background-color: $light-color;
+  }
+  &__div--dark {
+    background-color: $middle-color;
+  }
+}
+
+.footer {
+  background-color: $dark-color;
+  color: $light-color;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    text-transform: none;
+  }
+  &__list {
+    display: flex;
+    padding: 1rem;
+  }
+  &__item {
+    border-radius: 50%;
+    border: 2px solid $light-color;
+    margin-left: 1rem;
+    text-align: center;
+  }
+  &__items {
+    color: $light-color;
+    padding: 0.7rem 0.5rem;
+  }
+}

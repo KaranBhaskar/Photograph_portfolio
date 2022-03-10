@@ -73,3 +73,96 @@ h2, h3, h4 {
     font-size: 1.3rem; }
   .header__home__btn:hover {
     background-color: #ffbc00; }
+
+.index,
+.creative {
+  padding-top: 1.5rem; }
+  .index__title,
+  .creative__title {
+    text-align: center;
+    font-size: 2.5rem; }
+  .index__line,
+  .creative__line {
+    width: 5rem;
+    height: 0.3125rem;
+    background-color: #ffbc00;
+    margin: 0.5rem auto;
+    border-radius: 0.3125rem; }
+  .index__para,
+  .creative__para {
+    text-align: center;
+    font-size: 1.5rem; }
+
+.specials {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .specials__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 0.5rem; }
+  .specials__icon {
+    color: #ffbc00;
+    margin: 0.5rem 0; }
+  .specials__icon--dark-circle {
+    background-color: #333;
+    border-radius: 50%;
+    padding: 1.5rem;
+    color: #f4f4f4;
+    transition: all 1s;
+    width: 8.25rem;
+    height: 8.25rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    position: relative; }
+    .specials__icon--dark-circle:hover {
+      background-color: #ffbc00;
+      transform: scale(1.3);
+      margin-bottom: 3rem; }
+
+.awards {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .awards__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0.5rem;
+    height: 15rem;
+    width: 100%; }
+  .awards__title {
+    font-size: 1.5rem;
+    padding: 1rem 0; }
+  .awards__para {
+    font-size: 2.5rem; }
+  .awards__div--light {
+    background-color: #f4f4f4; }
+  .awards__div--dark {
+    background-color: #ccc; }
+
+.footer {
+  background-color: #333;
+  color: #f4f4f4; }
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .footer__title {
+    text-transform: none; }
+  .footer__list {
+    display: flex;
+    padding: 1rem; }
+  .footer__item {
+    border-radius: 50%;
+    border: 2px solid #f4f4f4;
+    margin-left: 1rem;
+    text-align: center; }
+  .footer__items {
+    color: #f4f4f4;
+    padding: 0.7rem 0.5rem; }
