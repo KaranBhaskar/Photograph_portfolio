@@ -5,7 +5,7 @@
   margin: auto;
   overflow: hidden; }
 
-.header__home__btn {
+.header__home__btn, .contact__btn {
   display: inline-block;
   padding: 0.75rem 1.25rem;
   cursor: pointer;
@@ -83,20 +83,26 @@ h2, h3, h4 {
 .creative,
 .about,
 .skills,
-.testimonial {
+.testimonial,
+.work,
+.contact {
   padding-top: 1.5rem; }
   .index__title,
   .creative__title,
   .about__title,
   .skills__title,
-  .testimonial__title {
+  .testimonial__title,
+  .work__title,
+  .contact__title {
     text-align: center;
     font-size: 2.5rem; }
   .index__line,
   .creative__line,
   .about__line,
   .skills__line,
-  .testimonial__line {
+  .testimonial__line,
+  .work__line,
+  .contact__line {
     width: 5rem;
     height: 0.3125rem;
     background-color: #ffbc00;
@@ -106,7 +112,9 @@ h2, h3, h4 {
   .creative__para,
   .about__para,
   .skills__para,
-  .testimonial__para {
+  .testimonial__para,
+  .work__para,
+  .contact__para {
     text-align: center;
     font-size: 1.5rem; }
 
@@ -189,7 +197,8 @@ h2, h3, h4 {
     justify-content: space-between;
     align-items: center; }
   .footer__title {
-    text-transform: none; }
+    text-transform: none;
+    font-size: 1rem; }
   .footer__list {
     display: flex;
     padding: 1rem; }
@@ -246,3 +255,69 @@ h2, h3, h4 {
     text-transform: capitalize;
     font-size: 1rem;
     font-weight: normal; }
+
+.work {
+  border-top: 3px solid #ffbc00; }
+  .work__projects {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0; }
+  .work__img {
+    transition: all 0.5s ease;
+    height: 100%; }
+    .work__img:hover {
+      transform: scale(1.3); }
+  .work__project {
+    overflow: hidden;
+    position: relative; }
+    .work__project:before {
+      content: "";
+      background: #ffbc00;
+      opacity: 0.9;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; }
+    .work__project__div {
+      display: none; }
+
+.contact {
+  border-top: 3px solid #ffbc00; }
+  .contact__form {
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin-bottom: 4rem; }
+  .contact__input {
+    padding: 0.5rem; }
+  .contact__textarea {
+    padding: 1rem;
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 9; }
+  .contact__btn {
+    background-color: #333;
+    color: #f4f4f4;
+    display: block;
+    width: 50%;
+    margin: 2rem auto; }
+    .contact__btn:hover {
+      background-color: #ffbc00; }
+
+.info {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: #333;
+  color: #f4f4f4;
+  padding: 2rem 0; }
+
+.prop {
+  background-color: #ffbc00;
+  text-align: center;
+  color: #f4f4f4;
+  font-size: 4rem;
+  padding: 2rem 0; }
